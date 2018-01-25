@@ -1,5 +1,6 @@
 package com.codingblocks.maitworkshopapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
                 int c = a + b;
                 String result = String.valueOf(c);
                 tv.setText(result);
+
+                Intent i = new Intent(MainActivity.this, ProxActivity.class);
+                startActivity(i);
             }
         });
 
